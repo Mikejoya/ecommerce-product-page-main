@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./table.css" media="(min-width: 500px)">
+  <link rel="stylesheet" href="./desktop.css" media="(min-width: 1024px)">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { margin-top: 16px;}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="full__img-mode">
+    <img class="close" src="./images/icon-close.svg" alt="">
+        <figure>
+          <div class="container__arrow arrow__left-modal" id="arrow__left">
+            <img class="arrow" src="./images/icon-previous.svg" alt="">
+          </div>
+          <img class="product" id="img__product-modal" src="./images/image-product-1.jpg" alt="">
+          <div class="container__arrow arrow__right-modal" id="arrow__right">
+            <img class="arrow" src="./images/icon-next.svg" alt="">
+          </div>
+        </figure>
+        <div class="product__content modal__imgs">
+          <img class="modal__gallery-thumnail cursor" id="a1" src="./images/image-product-1-thumbnail.jpg" alt="">
+          <img class="modal__gallery-thumnail cursor" id="a2" src="./images/image-product-2-thumbnail.jpg" alt="">
+          <img class="modal__gallery-thumnail cursor" id="a3" src="./images/image-product-3-thumbnail.jpg" alt="">
+          <img class="modal__gallery-thumnail cursor" id="a4" src="./images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+  
+  </section>
+<header>
+  <section class="container__img">      
+    <div class="container__img--logo">
+      <img class="icon__menu" src="./images/icon-menu.svg" alt="icon menu">
+      <img class="icon__logo" src="./images/logo.svg" alt="logo">
+    </div>
+    <nav class="nav__principal">
+      <ul>
+        <li class="cursor" >Collections</li>
+        <li class="cursor" >Men</li>
+        <li class="cursor" >Women</li>
+        <li class="cursor" >About</li>
+        <li class="cursor" >Contact</li>
+      </ul>
+    </nav>
+    <div class="container__icon--cart">
+      <div class="cart__quantily">
+        <div class="quantityOfProducts">0</div>
+        <img class="car__icon" src="./images/icon-cart.svg" alt="cart">
+      </div>
+      <img class="avatar" src="./images/image-avatar.png" alt="avatar">
+    </div>
+  </section>
+  <section class="container__nav inactive">
+    <div class="nav">
+      <img class="closedList" src="./images/icon-close.svg" alt="">
+      <nav class="nav__options">
+        <ul>
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </div>
+    </section>
+  </header>
+  <main>
+  <section class="container__product-cart inactive">
+      <h3>Cart</h3>
+      <p id="emptyCart"></p>
+      <div class="cart__content">
+        <div class="container__icons-cart">
+          <img class="img__product" src="./images/image-product-1-thumbnail.jpg" alt="">
+          <div>
+            <p>Fall Limited Edition Sneakers <br>$125.00 x<span class="multiplier__number"></span>$<span class="price__products">0</span>.00</p>
+          </div>
+          <img class="img__deleted" src="./images/icon-delete.svg" alt="">
+        </div>
+        <button class="button__cart">Checkout</button>
+      </div>
+  </section>
+  <section class="container__products">
+    <figure>
+      <img class="product" id="img__products" src="./images/image-product-1.jpg" alt="">
+    </figure>
+    <div class="product__content ">
+      <img class="gallery-thumnail cursor" id="1" src="./images/image-product-1-thumbnail.jpg" alt="">
+      <img class="gallery-thumnail cursor" id="2" src="./images/image-product-2-thumbnail.jpg" alt="">
+      <img class="gallery-thumnail cursor" id="3" src="./images/image-product-3-thumbnail.jpg" alt="">
+      <img class="gallery-thumnail cursor" id="4" src="./images/image-product-4-thumbnail.jpg" alt="">
+    </div>
+    <div class="container__arrow left arrow__img-principalLeft">
+      <img class="arrow" src="./images/icon-previous.svg" alt="">
+    </div>
+    <div class="container__arrow right arrow__img-principalRight">
+      <img class="arrow" src="./images/icon-next.svg" alt="">
+    </div>
+  </section>
+  <section class="container__info-products">
+    <div class="info__product">
+      <h2>Sneaker Company</h2>
+      
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="info__price">
+          <p class="price__object">$125.00<span>50%</span></p>
+          <p class="to__pay"><span>$250</span>.00</p>
+        </div>
+      </div>
+      <div class="container__current-button">
+        <div class="current__products">
+          <img class="minus" src="./images/icon-minus.svg" alt="">
+          <input class="input__value" type="number" value="0">
+          <img class="plus" src="./images/icon-plus.svg" alt="">
+        </div>
+        <button class="button__shopping">Add to cart</button>
+      </div>
+    </section>
+    
+  </main>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
